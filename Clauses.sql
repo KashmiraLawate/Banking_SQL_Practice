@@ -65,6 +65,50 @@ else "High Balance"
 end as cat
 from accounts;
 
+use banking;
+select * from accounts;
+
+select account_type ,count(acc_ID)as cnt
+from accounts
+group by account_type
+having cnt>5;
+
+
+select * from accounts;
+select * from loans;
+select * from customers;
+select * from branches;
+
+
+select upper(Firstname) from customers;
+select lower(firstname) from customers;
+select concat(firstname,"-",lastname) from customers;
+
+
+select * from loans;
+select round(interest_Rate) from loans;
+select ceil(interest_Rate) from loans;
+select floor(interest_Rate) from loans;
+
+select ceil(2.1);
+
+select abs(-3);
+
+select mod(25,4);
+
+select current_date();
+select current_time();
+select now();
+
+
+
+
+
+
+
+
+
+
 
 
 
